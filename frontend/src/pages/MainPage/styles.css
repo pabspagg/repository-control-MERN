@@ -1,0 +1,76 @@
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 2rem;
+}
+#main .nav{
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    border-bottom: 1px solid black;
+    padding: .5rem;
+}
+#main .nav .logo {
+    flex: 1;
+    font-size: 1rem;
+    margin:0;
+}
+
+#main .search,
+#main .new{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    background-color:white;
+    max-width: 480px;
+    margin: 2rem auto;
+    padding:.5rem;
+    /* auto alinha para o centro qndo usado em margin */
+}
+
+#main label{
+    flex-shrink: 0;
+}
+
+#main input{
+    width: 100%;
+}
+
+#main .repositories{
+    max-width: 480px;
+    margin: 1rem auto;
+}
+#main .repositories .title{
+    font-size: 1.3rem;
+    text-align: center;
+}
+#main .repositories .list{
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main .repositories .item{
+    display: flex;
+    align-items: center;
+    background-color:lightgrey;
+    border: 1px solid rgba(77, 75, 75, 0.431)
+}
+
+#main .repositories .item:last-child{
+    border-bottom: none;
+}
+
+#main .repositories .item .info{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    align-items: flex-start;
+    padding-left:5px;
+    background-color:lightgrey;
+}
+#main .repositories .item .name{
+    font-size: 1.5em;  
+}
